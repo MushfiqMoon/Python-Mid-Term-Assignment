@@ -6,6 +6,12 @@ class Student:
         self.is_enrolled = is_enrolled
         StudentDatabase.add_student(self)
 
+    def enroll_student(self):
+        self.is_enrolled = True
+
+    def drop_student(self):
+        self.is_enrolled = False
+
 
 class StudentDatabase:
     student_list = []
